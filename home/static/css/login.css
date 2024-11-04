@@ -101,3 +101,6 @@ body {
     background-color: #218838;
   }
   
+  .initial_page {
+    onclick: src
+  }

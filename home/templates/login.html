@@ -10,8 +10,9 @@
   </head>
   <body>
     <div class="login-container">
-        <img style='max-width: 300px;'src="{% static 'img/Logo.png' %}" alt="Logo">
+        <img style='max-width: 300px;'src="{% static 'img/Logo.png' %}" alt="Logo" onclick="">
       <form action="#" method="POST">
+        {% csrf_token %}
           <div class="input-group">
               <label for="username">Usuário</label>
               <input type="text" id="username" name="username" required>
@@ -21,7 +22,7 @@
               <input type="password" id="password" name="password" required>
           </div>
           <div class="submit-row">
-            <a href="{% url 'home' %}" class="btn-submit">Entrar</a>
+            <a href="{% url 'home' %}" class="btn-submit" onclick="alert('Login efetuado')">Entrar</a>
       </form>
       <div class="options" >
           <a href="#">Recuperar Senha</a>

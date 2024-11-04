@@ -14,7 +14,7 @@
       <form action="#" method="POST">
         <fieldset class="module aligned">
           <div class="form-row field-nome_func">
-            <label for="id_nome_func">Nome Funcionario:</label>
+            <label for="id_nome_func">Nome:</label>
             <input
               type="text"
               name="nome_func"
@@ -24,7 +24,7 @@
             />
           </div>
           <div class="form-row field-peso_Cpf">
-            <label class="required" for="id_peso_Cpf">Cpf:</label>
+            <label class="required" for="id_peso_Cpf">CPF:</label>
             <input
               type="number"
               name="peso_Cpf"
@@ -39,20 +39,22 @@
               type="text"
               name="endereço"
               class="vTextField"
-              maxlength="2"
+              maxlength="50"
               id="id_endereço"
             />
           </div>
           <div class="form-row field-sexo">
-            <label for="id_sexo">Sexo:</label>
-            <input
-              type="text"
-              name="sexo"
-              class="vTextField"
-              maxlength="30"
-              id="id_sexo"
-            />
-          </div>
+            <label class= "required"for="id_sexo">Sexo:</label>
+            <select name="sexo" id="id_sexo"
+            type="text"
+            name="sexo"
+            class="vTextField"
+            maxlength="30"
+            id="id_sexo">
+              <option value="masculino" selected>Masculino</option>
+              <option value="feminino">Feminino</option> 
+            </select>
+          ></div>
           <div class="form-row field-telefone">
             <label class="required" for="id_telefone">Telefone:</label>
             <input name="telefone" id="id_telefone" />
